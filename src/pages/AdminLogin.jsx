@@ -1,0 +1,98 @@
+import { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { ThemeContext } from '../context/ThemeContext';
+import './AdminLogin.css';
+
+const AdminLogin = () => {
+  const { darkMode } = useContext(ThemeContext);
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+
+    const ADMIN_EMAIL = 'timetomisin@gmail.com';
+    if (formData.email !== ADMIN_EMAIL) {
+      setError('Only authorized email can access the admin dashboard');
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await axios.post('http://localhost:5000/api/admin/login', formData);
+      localStorage.setItem('adminToken', response.data.token);
+      navigate('/admin/dashboard');
+    } catch (err) {
+      setError(err.response?.data?.message || 'Error logging in');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className={`admin-login ${darkMode ? 'dark' : 'light'}`}>
+      <div className="login-container">
+        <div className="login-card">
+          <h1>Admin Login</h1>
+          <p>Manage your portfolio projects</p>
+
+          <form onSubmit={handleSubmit}>
+            {error && <div className="error-message">{error}</div>}
+
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder="admin@portfolio.com"
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+                placeholder="Enter your password"
+              />
+            </div>
+
+            <button type="submit" className="btn btn-primary" disabled={loading}>
+              {loading ? 'Logging in...' : 'Login'}
+            </button>
+          </form>
+
+          <p className="register-link">
+            Don't have an account? <a href="/admin/register">Register here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AdminLogin;

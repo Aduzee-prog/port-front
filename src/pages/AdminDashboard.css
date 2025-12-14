@@ -1,0 +1,401 @@
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.admin-dashboard.light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.admin-dashboard.dark {
+  background-color: #0a0e27;
+  color: #e0e0e0;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+}
+
+.dashboard-header h1 {
+  color: #667eea;
+  font-size: 2rem;
+}
+
+.btn-logout {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.project-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard.dark .project-form {
+  background-color: #1a1f3a;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-form h2 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.project-form .form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-form label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.project-form input,
+.project-form textarea {
+  padding: 0.8rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.admin-dashboard.light .project-form input,
+.admin-dashboard.light .project-form textarea {
+  background-color: #f5f5f5;
+  color: #333;
+  border-color: #e0e0e0;
+}
+
+.admin-dashboard.dark .project-form input,
+.admin-dashboard.dark .project-form textarea {
+  background-color: #0a0e27;
+  color: #e0e0e0;
+  border-color: #2a2f4a;
+}
+
+.project-form input:focus,
+.project-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-group.checkbox input {
+  width: auto;
+}
+
+.projects-list {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard.dark .projects-list {
+  background-color: #1a1f3a;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.projects-list h2 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.no-projects {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.6;
+  font-size: 1.1rem;
+}
+
+.projects-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.admin-dashboard.light .project-item {
+  background-color: #f9f9f9;
+}
+
+.admin-dashboard.dark .project-item {
+  background-color: #0a0e27;
+  border-color: #2a2f4a;
+}
+
+.project-item:hover {
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.15);
+  transform: translateX(5px);
+}
+
+.project-details h3 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-details p {
+  opacity: 0.7;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.project-links-admin {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links-admin a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-links-admin a:hover {
+  text-decoration: underline;
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 1rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-logout {
+    width: 100%;
+  }
+
+  .project-form {
+    padding: 1.5rem;
+  }
+
+  .project-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .projects-list {
+    padding: 1.5rem;
+  }
+
+  .projects-list h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .project-details h3 {
+    font-size: 1rem;
+  }
+
+  .project-details p {
+    font-size: 0.85rem;
+  }
+
+  .project-actions {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    flex: 1;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-dashboard {
+    padding: 0.8rem;
+    min-height: calc(100vh - 60px);
+  }
+
+  .dashboard-container {
+    padding: 0;
+  }
+
+  .dashboard-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .btn-logout {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .project-form {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-form h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-form .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .project-form label {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .project-form input,
+  .project-form textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .projects-list {
+    padding: 1rem;
+  }
+
+  .projects-list h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects-table {
+    gap: 0.8rem;
+  }
+
+  .project-item {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-details h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .project-details p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-links-admin {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .project-links-admin a {
+    font-size: 0.8rem;
+  }
+
+  .project-actions {
+    gap: 0.3rem;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}

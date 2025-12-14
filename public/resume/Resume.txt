@@ -1,0 +1,80 @@
+================================================
+FULL-STACK DEVELOPER RESUME
+================================================
+
+CONTACT INFORMATION
+Email: contact@portfolio.com
+Phone: +1 (555) 000-0000
+GitHub: https://github.com/WAVY91
+Location: Available for Remote Work
+
+PROFESSIONAL SUMMARY
+Full-stack developer with expertise in modern web technologies including React, Node.js, and MongoDB. 
+Passionate about building scalable, user-friendly applications. Strong problem-solving skills and 
+commitment to writing clean, maintainable code.
+
+TECHNICAL SKILLS
+
+Frontend Development:
+- HTML5, CSS3, Bootstrap
+- JavaScript (ES6+)
+- React.js, React Router, Redux
+
+Backend Development:
+- Node.js, Express.js
+- MongoDB, Mongoose
+- RESTful API Design
+
+Additional Skills:
+- Git & GitHub Version Control
+- Firebase Integration
+- Responsive Web Design
+- Web Performance Optimization
+
+PROJECTS
+
+1. She Leads Africa Website Clone
+   - Technologies: HTML, CSS, Bootstrap, JavaScript
+   - Description: Static website clone showcasing HTML & CSS proficiency
+   - Live: https://wavy91.github.io/project/
+   - GitHub: https://github.com/WAVY91/project
+
+2. Airbnb Website Clone
+   - Technologies: HTML, CSS, Bootstrap, JavaScript
+   - Description: Responsive booking platform clone demonstrating layout and design skills
+   - Live: https://wavy91.github.io/bnb/
+   - GitHub: https://github.com/WAVY91/bnb
+
+3. Artisan Project - Dynamic Web Application
+   - Technologies: React, Node.js, MongoDB, Express.js, Firebase
+   - Description: Full-stack platform connecting customers with artisans for various services
+   - Live: https://artisan-project-orpin.vercel.app/
+   - GitHub: https://github.com/WAVY91/artisan-project
+
+EXPERIENCE
+
+Web Development
+- Building responsive and interactive web applications
+- Designing and implementing RESTful APIs
+- Database design and optimization
+- Frontend component development using React
+- User authentication and authorization
+
+EDUCATION & CERTIFICATIONS
+- Full-Stack Web Development Bootcamp
+- Continuous Learning: Following industry trends and best practices
+
+PROFESSIONAL ATTRIBUTES
+- Problem-solving oriented
+- Collaborative team player
+- Quick learner
+- Attention to detail
+- Time management and deadline-driven
+
+LANGUAGES
+- English (Professional)
+- [Add other languages if applicable]
+
+================================================
+Last Updated: 2024
+================================================
