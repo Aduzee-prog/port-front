@@ -24,7 +24,7 @@ const Footer = () => {
             <h3>Social</h3>
             <ul>
               <li><a href="https://github.com/WAVY91" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/tomisin-samuel" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
             </ul>
           </div>

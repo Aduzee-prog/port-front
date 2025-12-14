@@ -10,9 +10,8 @@ const About = () => {
       <div className="about-container">
         <h2 className="section-title">About Me</h2>
         <p className="about-intro">
-          Web technology has revolutionized how we interact with information and services online. 
-          It empowers businesses to reach global audiences and enables developers to create innovative solutions that solve real-world problems. 
-          I'm passionate about leveraging modern web technologies to build scalable, user-friendly applications that make a meaningful impact.
+          Technology has always fascinated me and inspired my journey into web development.
+          I'm driven by the challenge of creating innovative solutions that make a real impact.
         </p>
         <div className="about-content">
           <div className="about-text">
