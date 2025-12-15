@@ -29,7 +29,7 @@ const AdminRegister = () => {
 
     const ADMIN_EMAIL = "timetomisin@gmail.com";
     if (formData.email !== ADMIN_EMAIL) {
-      setError("Only authorized email can access the admin dashboard");
+      setError("Only authorized email can access the admin dashboard!");
       return;
     }
 
