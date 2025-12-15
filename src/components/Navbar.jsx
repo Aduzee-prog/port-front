@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link to="/">
-            <span className="logo-text">Ajakaiye Oluwatomisin</span>
+            <span className="logo-text">Portfolio</span>
           </Link>
         </div>
 
